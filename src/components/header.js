@@ -1,15 +1,36 @@
+// basics and utilities import
 import React from 'react'
-import { Link } from 'gatsby'
+import { Link, graphql, useStaticQuery } from 'gatsby'
+// module stylessheet import
+import * as headerStyles from './stylesComponents/header.module.scss'
 
 const Header = () => {
+  
+
   return (
-    <div>
-        <h4>My portfolio</h4>
-        <p><Link to="/">Home</Link></p>
-        <p><Link to="/about">About me</Link></p>
-        <p><Link to="/blog">Blog</Link></p>
-        <p><Link to="/contact">Contact</Link></p>
-    </div>
+    <header className={headerStyles.header}>
+        <h4>
+          <Link className={headerStyles.title} to="/">
+            Lautaro
+          </Link>  
+        </h4>
+        <nav>
+          <ul className={headerStyles.navList}>
+            <li>
+              <Link className={headerStyles.navItem} activeClassName={headerStyles.activeNavItem} to="/">Home</Link>
+            </li>
+            <li>
+              <Link className={headerStyles.navItem} activeClassName={headerStyles.activeNavItem} to="/about">About me</Link>
+            </li>
+            <li>
+              <Link className={headerStyles.navItem} activeClassName={headerStyles.activeNavItem} to="/blog">Blog</Link>
+            </li>
+            <li>
+              <Link className={headerStyles.navItem} activeClassName={headerStyles.activeNavItem} to="/contact">Contact</Link>
+            </li>
+          </ul>
+        </nav>
+    </header>
   )
 }
 
