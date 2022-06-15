@@ -4,7 +4,7 @@ import { Link, graphql, useStaticQuery } from 'gatsby'
 // module stylessheet import
 import * as headerStyles from './stylesComponents/header.module.scss'
 
-const Header = () => {
+const Header = () => { 
 
 
 //request to the GraphQL to bring all the data from the site

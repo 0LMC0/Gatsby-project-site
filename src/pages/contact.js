@@ -10,7 +10,7 @@ const ContactPage = () => {
         <h2>Phone number:</h2>
         <p>+54 11-3249-3803</p>
         <h2>E-mail:</h2>
-        <p>Lautycaceresss871@mgail.com</p>
+        <p>Lautycaceresss871@gmail.com</p>
         <a target="_blank" rel="noreferrer" href="https://www.linkedin.com/in/lautaro-caceres/">Linkedin profile</a>
       </Layout>
   )
